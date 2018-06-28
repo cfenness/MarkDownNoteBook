@@ -3,7 +3,8 @@
   "version": "0.2.0",
   "description": "Interactive JavaScript notebooks with clever graphing",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/JoelOtter/kajero"
   },
   "keywords": [
     "notebook"
@@ -14,9 +15,11 @@
   },
   "author": "Joel Auterson <joel.auterson@gmail.com>",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoelOtter/kajero/issues"
+  },
+  "homepage": "https://github.com/JoelOtter/kajero",
   "dependencies": {
-    "growl": "^1.10.5",
-    "hoek": "^5.0.3",
     "request": "^2.72.0"
   },
   "devDependencies": {
@@ -63,6 +66,7 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel-register --recursive \"./src/**/*-spec.js\"",
     "test-cov": "./node_modules/.bin/gulp test-cov",
-    "start": "node your-script.js"
+    "start": "node app",
+    "postinstall": "gulp default"
   }
 }
