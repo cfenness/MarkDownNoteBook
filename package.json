@@ -62,6 +62,7 @@
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel-register --recursive \"./src/**/*-spec.js\"",
-    "test-cov": "./node_modules/.bin/gulp test-cov"
+    "test-cov": "./node_modules/.bin/gulp test-cov",
+    "start": "node your-script.js"
   }
 }
